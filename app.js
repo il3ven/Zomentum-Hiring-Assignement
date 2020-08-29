@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
-const PORT = 5000;
 
 const userRoutes = require("./routes/users");
 const ticketRoutes = require("./routes/tickets");
@@ -29,7 +28,7 @@ db.once("open", async function () {
   console.log("MongoDB is now connected");
 
   // EXPRESS
-  app.listen(PORT, () => {
+  app.listen(80, () => {
     console.log(`Express is now listening`);
   });
 
