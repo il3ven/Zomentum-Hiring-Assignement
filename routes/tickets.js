@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
   try {
     const foundTickets = await TicketSchema.find({ timing: req.body.timing });
 
-    if (foundTickets.length < 20) {
+    if (foundTickets.length > 20) {
       throw "More than 20 tickets exist";
     }
 
