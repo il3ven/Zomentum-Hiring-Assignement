@@ -1,0 +1,25 @@
+{
+  "name": "zomentum-hiring-assignement",
+  "version": "1.0.0",
+  "description": "REST API for Zomentum hiring assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/il3ven/Zomentum-Hiring-Assignement.git"
+  },
+  "author": "il3ven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/il3ven/Zomentum-Hiring-Assignement/issues"
+  },
+  "homepage": "https://github.com/il3ven/Zomentum-Hiring-Assignement#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
