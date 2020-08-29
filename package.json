@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/il3ven/Zomentum-Hiring-Assignement#readme",
   "dependencies": {
+    "agenda": "^3.1.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
