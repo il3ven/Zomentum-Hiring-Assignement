@@ -3,7 +3,7 @@ const router = express.Router();
 const TicketSchema = require("../models/tickets");
 
 // Get all Tickets
-router.post("/", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const tickets = await UserSchema.find({});
     res.status(200).json(tickets);
