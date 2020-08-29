@@ -5,7 +5,7 @@ const TicketSchema = require("../models/tickets");
 // Get all Tickets
 router.get("/", async (req, res) => {
   try {
-    const tickets = await UserSchema.find({});
+    const tickets = await TicketSchema.find({});
     res.status(200).json(tickets);
   } catch (err) {
     res.status(500).send(err);
