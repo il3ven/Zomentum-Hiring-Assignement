@@ -28,7 +28,7 @@ db.once("open", async function () {
   console.log("MongoDB is now connected");
 
   // EXPRESS
-  app.listen(80, () => {
+  app.listen(process.env.PORT, () => {
     console.log(`Express is now listening`);
   });
 
