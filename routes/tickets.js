@@ -12,7 +12,29 @@ router.post("/", async (req, res) => {
   try {
     const savedTicket = await ticket.save();
 
-    res.status(200).send(ticket);
+    res.status(200).send(savedTicket);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
+router.patch("/:id", async (req, res) => {
+  try {
+    await TicketSchema.findByIdAndUpdate(req.params.id, {
+      $set: { timing: req.body.timing },
+    });
+
+    res.status(200).send();
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
+router.get("/:timing", async (req, res) => {
+  try {
+    const foundTickets = await TicketSchema.find({ timing: req.params.timing });
+
+    res.status(200).send(foundTickets);
   } catch (err) {
     res.status(500).send(err);
   }
