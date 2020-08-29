@@ -7,7 +7,7 @@ const TicketSchema = new mongoose.Schema({
     required: true,
   },
   phoneNumber: Number,
-  timing: Date, // Timing for movie show
+  timing: { type: Date, default: Date.now(), required: true }, // Timing for movie show
 });
 
-module.exports = mongoose.model("Tickets", UserSchema);
+module.exports = mongoose.model("Tickets", TicketSchema);
