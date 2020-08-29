@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const UserSchema = require("../models/users");
 
+// Create a user
 router.post("/", async (req, res) => {
   const user = new UserSchema({
     username: req.body.username,
@@ -18,6 +19,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Get all users
 router.get("/", async (req, res) => {
   try {
     const users = await UserSchema.find({});

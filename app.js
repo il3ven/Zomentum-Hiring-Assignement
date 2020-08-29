@@ -26,9 +26,11 @@ mongoose.connect(process.env.MONGODB_URL, {
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "Connection error:"));
 db.once("open", async function () {
+  console.log("MongoDB is now connected");
+
   // EXPRESS
   app.listen(PORT, () => {
-    console.log(`REST API is running at http://localhost:${PORT}`);
+    console.log(`Express is now listening`);
   });
 
   // AGENDA

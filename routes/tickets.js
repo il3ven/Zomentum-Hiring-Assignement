@@ -2,6 +2,16 @@ const express = require("express");
 const router = express.Router();
 const TicketSchema = require("../models/tickets");
 
+// Get all Tickets
+router.post("/", async (req, res) => {
+  try {
+    const tickets = await UserSchema.find({});
+    res.status(200).json(tickets);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 // Book Ticket
 router.post("/", async (req, res) => {
   const ticket = new TicketSchema({
