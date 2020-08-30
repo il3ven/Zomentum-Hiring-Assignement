@@ -54,7 +54,7 @@ API for a movie booking system. https://zomentum.herokuapp.com/users
 - [x] An endpoint to delete a particular ticket.
 - [x] An endpoint to view the user’s details based on the ticket id.
 - [ ] Mark a ticket as expired if there is a diff of 8 hours between the ticket timing and current
-  time. `Skipped.` [See note](#note)
+      time. `Skipped.` [See note](#note)
 - [x] For a particular timing, a maximum of 20 tickets can be booked.
 - [x] Create a proper readme for your project.
 - [x] Plus point if you could delete all the tickets which are expired automatically.
@@ -66,3 +66,7 @@ API for a movie booking system. https://zomentum.herokuapp.com/users
 Documentation about the API is hosted as a collection on Postman. It also includes examples.
 
 ### https://documenter.getpostman.com/view/9591717/TVCcXUxw
+
+## Screenshot
+
+<img src="postman-screenshot.png" width="800px">
