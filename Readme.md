@@ -6,7 +6,7 @@ API for a movie booking system
 
 ### Users
 
-```json
+```js
 {
   "_id": ObjectID,
   "username": { "type": String, "required": true },
@@ -19,7 +19,7 @@ API for a movie booking system
 
 ### Tickets
 
-```json
+```js
 {
   "userid": {
     "type": mongoose.Schema.Types.ObjectId,
@@ -52,8 +52,8 @@ API for a movie booking system
 - [x] An endpoint to view all the tickets for a particular time.
 - [x] An endpoint to delete a particular ticket.
 - [x] An endpoint to view the user’s details based on the ticket id.
-- [] Mark a ticket as expired if there is a diff of 8 hours between the ticket timing and current
-  time. `Skipped. See note` [create an anchor](#anchors-in-markdown)
+- [ ] Mark a ticket as expired if there is a diff of 8 hours between the ticket timing and current
+  time. `Skipped. See note` [](#note)
 - [x] For a particular timing, a maximum of 20 tickets can be booked.
 - [x] Create a proper readme for your project.
 - [x] Plus point if you could delete all the tickets which are expired automatically.
