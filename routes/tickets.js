@@ -38,11 +38,15 @@ router.post("/", async (req, res) => {
 // Update Ticket Timing
 router.patch("/:id", async (req, res) => {
   try {
-    await TicketSchema.findByIdAndUpdate(req.params.id, {
-      $set: { timing: req.body.timing },
-    });
+    const updatedTicket = await TicketSchema.findByIdAndUpdate(
+      req.params.id,
+      {
+        $set: { timing: req.body.timing },
+      },
+      { new: true }
+    );
 
-    res.status(200).send();
+    res.status(200).send(updatedTicket);
   } catch (err) {
     res.status(500).send(err);
   }
