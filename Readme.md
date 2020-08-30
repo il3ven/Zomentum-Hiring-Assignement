@@ -70,3 +70,5 @@ Documentation about the API is hosted as a collection on Postman. It also includ
 ## Screenshot
 
 <img src="postman-screenshot.png" width="800px">
+
+> This is a sample screenshot. Working of all the API can be found in the above mentioned Postman collection.
